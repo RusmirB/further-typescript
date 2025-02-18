@@ -39,7 +39,7 @@ test.describe('Negative API Testing - Author Management', () => {
     });
   });
 
-  test('Get a non-existing author', async ({ request }) => {
+  test.only('Get a non-existing author', async ({ request }) => {
     const nonExistentId = 999999;
 
     const response = await request.get(`${BASE_URL}/Authors/${nonExistentId}`);
