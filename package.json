@@ -1,0 +1,35 @@
+{
+  "name": "further-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api",
+    "test:ui": "playwright test tests/ui",
+    "lint": "eslint . --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.5.0",
+    "@playwright/test": "^1.50.1",
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.13.4",
+    "@typescript-eslint/eslint-plugin": "^8.24.1",
+    "@typescript-eslint/parser": "^8.24.1",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-playwright": "^2.2.0",
+    "husky": "^9.1.7",
+    "luxon": "^3.5.0",
+    "prettier": "^3.5.1"
+  },
+  "lint-staged": {
+    "*.{js,cjs,ts,mjs}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  }
+}

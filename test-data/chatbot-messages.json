@@ -1,0 +1,28 @@
+{
+  "common": {
+    "initialMessage": "How can I help you today?",
+    "whatIsYourNameMessage": "What is your first and last name?",
+    "whatIsYourPhoneNumberMessages": ["What is your phone number?", "What is your cell phone number?"],
+    "whatIsYourEmailMessage": "What is your email address? We will use this to identify your request in our system.",
+    "welcomeBackMessage": "Welcome back! What can we help you with today, "
+  },
+
+  "scheduleTourFlow": {
+    "whoIsInterestedMessage": "We would love to have you visit our community. Could you please tell me who is interested in moving to ACME Senior Living?",
+    "whenMessage": "When would you like to schedule your tour?",
+    "userTypeMessages": {
+      "Myself": "What is your timeline for potentially making a move?",
+      "Others": "Please tell us if you would like to learn about any of the following activities, so we can better prepare for your tour."
+    },
+    "finalMessages": [
+      "Thank you for experiencing how FURTHER could work for you. Are you interested in learning more about FURTHER?",
+      "Your tour has been requested. Someone will be in touch shortly to confirm whether your requested date/time is available."
+    ]
+  },
+
+  "pricingFlow": {
+    "whatLevelOfCareMessage": "What level of care are you interested in?",
+    "whoIsThisForMessage": "Who is this for?",
+    "whatIsYourTimelineMessage": "What is your timeline?"
+  }
+}
