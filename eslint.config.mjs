@@ -1,3 +1,4 @@
+import js from '@eslint/js';
 import tseslint from '@typescript-eslint/eslint-plugin';
 import tsParser from '@typescript-eslint/parser';
 import playwright from 'eslint-plugin-playwright';
@@ -14,7 +15,7 @@ export default [
       playwright,
     },
     rules: {
-      ...pluginJs.configs.recommended.rules,
+      ...js.configs.recommended.rules,
       ...tseslint.configs.recommended.rules,
       ...playwright.configs['flat/recommended'].rules,
       'playwright/expect-expect': 'off',
