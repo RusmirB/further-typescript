@@ -1,7 +1,5 @@
 import { test, expect } from '@playwright/test';
 
-const BASE_URL = 'https://fakerestapi.azurewebsites.net/api/v1';
-
 test.describe('Negative API Testing - Author Management', () => {
   const invalidAuthorTests = [
     {
@@ -33,7 +31,7 @@ test.describe('Negative API Testing - Author Management', () => {
   // Parameterized test to repeat for all invalidAuthors payloads
   invalidAuthorTests.forEach(({ description, payload }) => {
     test(`Create author with ${description}`, async ({ request }) => {
-      const response = await request.post(`${BASE_URL}/Authors`, { data: payload });
+      const response = await request.post(`/api/v1/Authors`, { data: payload });
 
       expect(response.status()).toBe(400);
     });
@@ -42,7 +40,7 @@ test.describe('Negative API Testing - Author Management', () => {
   test('Get a non-existing author', async ({ request }) => {
     const nonExistentId = 999999;
 
-    const response = await request.get(`${BASE_URL}/Authors/${nonExistentId}`);
+    const response = await request.get(`/api/v1/Authors/${nonExistentId}`);
 
     expect(response.status()).toBe(404);
   });
@@ -51,7 +49,7 @@ test.describe('Negative API Testing - Author Management', () => {
   test.skip('Delete a non-existing author', async ({ request }) => {
     const nonExistentId = 999999;
 
-    const response = await request.delete(`${BASE_URL}/Authors/${nonExistentId}`);
+    const response = await request.delete(`/api/v1/Authors/${nonExistentId}`);
 
     expect(response.status()).toBe(404);
   });
@@ -65,7 +63,7 @@ test.describe('Negative API Testing - Author Management', () => {
       lastName: 'Author',
     };
 
-    const response = await request.post(`${BASE_URL}/Authors`, { data: authorPayload });
+    const response = await request.post(`/api/v1/Authors`, { data: authorPayload });
 
     // Check response status
     expect(response.status()).toBe(400);
