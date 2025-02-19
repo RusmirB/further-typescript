@@ -69,7 +69,7 @@ test.describe('Chatbot', () => {
 
     // Schedule a tour again
     await chatbotPage.selectOption(inquiryType);
-    await chatbotPage.whoIsInterestedScheduleTourSteps();
+    await chatbotPage.selectOption(userType);
     await chatbotPage.selectTourScheduleSteps(userType);
     await chatbotPage.selectTimeline(userType, inquiryType);
     await chatbotPage.selectActivityAndConfirmSelection(userType);
