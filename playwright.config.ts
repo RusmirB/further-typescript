@@ -40,7 +40,7 @@ export default defineConfig({
       name: 'api_tests',
       testDir: './tests/api',
       use: {
-        baseURL: 'https://fakerestapi.azurewebsites.net/api/v1',
+        baseURL: 'https://fakerestapi.azurewebsites.net',
         extraHTTPHeaders: {
           'Content-Type': 'application/json',
         },
