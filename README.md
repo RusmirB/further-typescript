@@ -1,8 +1,8 @@
-# Playwright & TypeScript E2E Testing Framework
+# Further Playwright & TypeScript E2E Testing Framework
 
 ## Introduction
 
-This repository contains end-to-end (E2E) and API tests using **Playwright** and **TypeScript**.
+This repository contains end-to-end (E2E) and API tests for Further site using **Playwright** and **TypeScript**.
 
 For more information, check the official documentation:
 
@@ -89,3 +89,5 @@ To set up this project, follow these steps:
 ## Continuous Integration (CI/CD)
 
 - For integrating with CI/CD pipelines, refer to Playwright’s documentation [here](https://playwright.dev/docs/ci-intro)
+- Using GitHub Actions for CI/CD
+- Tests are triggered with each PR and push to main
